@@ -32,7 +32,7 @@ export class UsersService {
     this.usuarios.push(data);
   }
 
-  remove(id: number) {
+  delete(id: number) {
     for (let i = 0; i < this.usuarios.length; i++) {
       if (this.usuarios[i].id === id) {
         this.usuarios.splice(i, 1);
